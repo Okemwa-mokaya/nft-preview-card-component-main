@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue: hsl(217, 54%, 11%);
+  --Very-dark-blue: hsl(216, 50%, 16%);
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+  }
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    height: calc(100vh-1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.25rem;
+}
+.card{
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
+}
+.image{
+  position: relative;
+}
+.mining{
+  max-height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.image div{
+  background-color: hsl(178, 100%, 50%, 50%);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.image div:hover{
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 0.5rem; 
+}
+.image div img{
+ position: absolute;
+ top: 50%;
+ left: 50%; 
+ transform: translate(-50%,-70%);  
+}
+h1{
+  color: var(--White);
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h1:hover{
+ color: var(--Cyan);
+ cursor: pointer;
+}
+p{
+ color: var(--Soft-blue);
+ margin-bottom: 1rem;   
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+h2{
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+ font-size: 17px;
+ color: var(--Cyan);
+}
+h3{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 0.5rem;
+    color: var(--Soft-blue);
+}
+#line-div{
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 1rem;
+}
+.developer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.developer img{
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.developer p{
+ color: var(--White);
+}
+.developer p:hover{
+ color: var(--Cyan);
+ cursor: pointer;
+}
+.developer span{
+ color: var(--Soft-blue);
+}
+@media (min-width: 600px) {
+    .card{
+      width: 400px;
+    }
+}
